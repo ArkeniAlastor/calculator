@@ -1,43 +1,49 @@
 //alert("Hello")
 function func1()
 {
-    input.value+="1";
+    input.value+="1"
 }
 function func2()
 {
-    input.value+="2";
+    input.value+="2"
 }
 function func3()
 {
-    input.value+="3";
+    input.value+="3"
 }
 function func4()
 {
-    input.value += "4";
+    input.value += "4"
 }
 function func5()
 {
-    input.value += "5";
+    input.value += "5"
 }
 function func6()
 {
-    input.value += "6";
+    input.value += "6"
 }
 function func7()
 {
-    input.value += "7";
+    input.value += "7"
 }
 function func8()
 {
-    input.value += "8";
+    input.value += "8"
 }
 function func9()
 {
-    input.value += "9";
+    input.value += "9"
 }
 function func0()
 {
-    input.value += "0";
+    input.value += "0"
+}
+function funcDot() {
+    input.value += "."
+}
+function funcClear() {
+    input.value = ""
 }
 
 let input = document.getElementById("input")
@@ -51,14 +57,18 @@ let but7 = document.getElementById("b7")
 let but8 = document.getElementById("b8")
 let but9 = document.getElementById("b9")
 let but0 = document.getElementById("b0")
+let butDot = document.getElementById("dot")
+let butClear = document.getElementById("clear")
 
-but1.addEventListener("click", func1);
-but2.addEventListener("click", func2);
-but3.addEventListener("click", func3);
-but4.addEventListener("click", func4);
-but5.addEventListener("click", func5);
-but6.addEventListener("click", func6);
-but7.addEventListener("click", func7);
-but8.addEventListener("click", func8);
-but9.addEventListener("click", func9);
-but0.addEventListener("click", func0);
+but1.addEventListener("click", func1)
+but2.addEventListener("click", func2)
+but3.addEventListener("click", func3)
+but4.addEventListener("click", func4)
+but5.addEventListener("click", func5)
+but6.addEventListener("click", func6)
+but7.addEventListener("click", func7)
+but8.addEventListener("click", func8)
+but9.addEventListener("click", func9)
+but0.addEventListener("click", func0)
+butDot.addEventListener("click", funcDot)
+butClear.addEventListener("click", funcClear)
