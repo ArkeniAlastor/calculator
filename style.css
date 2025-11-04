@@ -1,18 +1,22 @@
 body {
-    background: #f0f0f0;
-    font-family: Arial, sans-serif;
+    background: #0d0d0d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 #main {
     display: flex;
     flex-direction: column;
-    border: 3px solid #222;
-    border-radius: 10px;
-    width: 220px;
-    padding: 10px;
-    margin: 100px auto;
-    background: white;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border: 2px solid #ff1a1a;
+    border-radius: 12px;
+    width: 250px;
+    padding: 15px;
+    background: #141414;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.25);
 }
 
 #main div {
@@ -21,35 +25,77 @@ body {
     margin-top: 10px;
 }
 
+/* Поле ввода */
 #input {
     width: 100%;
-    height: 35px;
-    font-size: 20px;
+    height: 45px;
+    font-size: 22px;
     text-align: right;
-    padding-right: 5px;
-    border: 2px solid #4a4a4a;
-    border-radius: 6px;
+    padding-right: 10px;
+    border: 2px solid #ff1a1a;
+    border-radius: 8px;
+    background: #000;
+    color: #ff4d4d;
+    outline: none;
+    box-shadow: inset 0 0 8px rgba(255, 0, 0, 0.3);
 }
 
+/* Кнопки */
 button {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     font-size: 18px;
     border: none;
-    border-radius: 6px;
-    background: #d8d8d8;
+    border-radius: 8px;
+    background: #1c1c1c;
+    color: #ff4d4d;
     cursor: pointer;
-    transition: 0.2s;
+    transition: all 0.2s ease;
 }
 
 button:hover {
-    background: #bdbdbd;
+    background: #ff1a1a;
+    color: #fff;
 }
 
+button:active {
+    transform: scale(0.95);
+}
+
+/* Операции */
 #sum, #min, #mult, #div {
-    background: #ffb347;
+    background: #b30000;
+    color: #fff;
+    font-weight: bold;
 }
 
+#sum:hover, #min:hover, #mult:hover, #div:hover {
+    background: #ff1a1a;
+}
+
+/* "=" */
 #res {
-    background: #66d17a;
+    background: #ff0000;
+    color: #fff;
+    font-weight: bold;
+}
+
+#res:hover {
+    background: #cc0000;
+}
+
+/* Очистка */
+#clear {
+    background: #2b0000;
+    color: #ff4d4d;
+    width: 100%;
+    font-weight: bold;
+    height: 45px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+#clear:hover {
+    background: #ff1a1a;
+    color: #fff;
 }
