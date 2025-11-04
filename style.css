@@ -25,7 +25,6 @@ body {
     margin-top: 10px;
 }
 
-/* Поле ввода */
 #input {
     width: 100%;
     height: 45px;
@@ -40,7 +39,6 @@ body {
     box-shadow: inset 0 0 8px rgba(255, 0, 0, 0.3);
 }
 
-/* Кнопки */
 button {
     width: 50px;
     height: 50px;
@@ -62,7 +60,6 @@ button:active {
     transform: scale(0.95);
 }
 
-/* Операции */
 #sum, #min, #mult, #div {
     background: #b30000;
     color: #fff;
@@ -73,7 +70,6 @@ button:active {
     background: #ff1a1a;
 }
 
-/* "=" */
 #res {
     background: #ff0000;
     color: #fff;
@@ -84,7 +80,6 @@ button:active {
     background: #cc0000;
 }
 
-/* Очистка */
 #clear {
     background: #2b0000;
     color: #ff4d4d;
